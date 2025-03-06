@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr
+20250306185624 b454a5a1f1d0021014714698eeae27d4
+[BOUND OBJECT FILES]
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\
+-LC:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\
+-LD:/programs/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+D:/programs/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
