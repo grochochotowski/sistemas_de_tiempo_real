@@ -2,7 +2,6 @@ with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Ex1 is
 
-begin
    -- Define data types
    subtype A is Integer range -40 .. 160;
    subtype B is Integer range 0 .. 120;
@@ -18,5 +17,12 @@ begin
    Result_2 : Integer := A + C;
    Result_3 : Integer := B + C;
 
+begin
+
+   -- Print results
+   Put_Line ("A + B = " & Integer'Image(Result1));
+   Put_Line ("A + C = " & Integer'Image(Result2));
+   Put_Line ("B + C = " & Integer'Image(Result3));
+
    null;
-end Main;
+end Ex1;
