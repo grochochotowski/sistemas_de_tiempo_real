@@ -31,14 +31,22 @@ procedure Main is
       type Traffic_Light is (Red, Yellow, Green);
 
       -- Declare variables
-      Light_1 : Traffic_Light := Red;;
+      Light_1 : Traffic_Light := Red;
       Light_2 : Traffic_Light := Yellow;
       Light_3 : Traffic_Light := Green;
 
+   begin
+      -- Print lights
+      Put_Line("Light 1: " & Traffic_Light'Image(Light_1));
+      Put_Line("Light 2: " & Traffic_Light'Image(Light_2));
+      Put_Line("Light 3: " & Traffic_Light'Image(Light_3));
+   end Ex2;
 
 begin
    -- Run procedures
+   Put_Line("==========Ex 01==========");
    Ex1;
+   Put_Line("==========Ex 02==========");
    EX2;
    null;
 end Main;
