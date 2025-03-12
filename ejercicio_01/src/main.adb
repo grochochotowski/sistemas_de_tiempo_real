@@ -47,7 +47,14 @@ procedure Main is
    procedure Ex3 is
       -- Define data types
       type A_Type is delta 0.001 range -30.0 .. 70.0;
-      type B_Type is digits 6 range -200.0 .. 220.0
+      type B_Type is digits 6 range -200.0 .. 220.0;
+
+      -- Initialize variables
+      A : A_Type := -23.12;
+      B : B_Type := 123.123;
+
+      -- Calculate
+      Result : B_Type := B_Type(A) + B;
 
    begin
 
