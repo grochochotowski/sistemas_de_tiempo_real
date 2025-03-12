@@ -26,10 +26,20 @@ procedure Main is
       Put_Line ("B + C = " & Integer'Image(Result_3));
    end Ex1;
 
+   procedure Ex2 is
+      -- Define data type
+      type Traffic_Light is (Red, Yellow, Green);
+
+      -- Declare variables
+      Light_1 : Traffic_Light := Red;;
+      Light_2 : Traffic_Light := Yellow;
+      Light_3 : Traffic_Light := Green;
+
 
 begin
    -- Run procedures
    Ex1;
+   EX2;
    null;
 end Main;
 
