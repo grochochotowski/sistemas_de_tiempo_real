@@ -57,7 +57,8 @@ procedure Main is
       Result : B_Type := B_Type(A) + B;
 
    begin
-
+      -- Print result
+      Put_Line("A + B = " & B_Type'Image(Result));
    end Ex3;
 
 begin
@@ -66,6 +67,8 @@ begin
    Ex1;
    Put_Line("==========Ex 02==========");
    EX2;
+   Put_Line("==========Ex 03==========");
+   EX3;
    null;
 end Main;
 
