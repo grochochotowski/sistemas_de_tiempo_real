@@ -12,5 +12,11 @@ begin
    A : A := -20;
    B : B := 30;
    C : C := 50;
+
+   -- Calculate operations
+   Result_1 : Integer := A + B;
+   Result_2 : Integer := A + C;
+   Result_3 : Integer := B + C;
+
    null;
 end Main;
