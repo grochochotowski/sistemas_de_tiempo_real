@@ -26,6 +26,7 @@ procedure Main is
       Put_Line ("B + C = " & Integer'Image(Result_3));
    end Ex1;
 
+
    procedure Ex2 is
       -- Define data type
       type Traffic_Light is (Red, Yellow, Green);
@@ -41,6 +42,16 @@ procedure Main is
       Put_Line("Light 2: " & Traffic_Light'Image(Light_2));
       Put_Line("Light 3: " & Traffic_Light'Image(Light_3));
    end Ex2;
+
+
+   procedure Ex3 is
+      -- Define data types
+      type A_Type is delta 0.001 range -30.0 .. 70.0;
+      type B_Type is digits 6 range -200.0 .. 220.0
+
+   begin
+
+   end Ex3;
 
 begin
    -- Run procedures
