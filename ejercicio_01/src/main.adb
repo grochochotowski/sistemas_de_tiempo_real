@@ -112,19 +112,20 @@ procedure Main is
    end Ex5;
 
 
-   procedure Ex6 is
-      -- Define data types
-      type Date_of_Birth is record
-         Day : Integer;
-         Month : Integer;
-         Year : Integer;
-      end record;
+   -- Define data types
+   type Date_of_Birth is record
+      Day : Integer;
+      Month : Integer;
+      Year : Integer;
+   end record;
 
-      type Personal_Data is record
-         Name : Unbounded_String;
-         Last_Name : Unbounded_String;
-         Birth : Date_of_Birth;
-      end record;
+   type Personal_Data is record
+      Name : Unbounded_String;
+      Last_Name : Unbounded_String;
+      Birth : Date_of_Birth;
+   end record;
+
+   procedure Ex6 is
 
       -- Initialize variables
       Person : Personal_Data := (
@@ -157,7 +158,7 @@ procedure Main is
          Name => To_Unbounded_String("Jakub"),
          Last_Name => To_Unbounded_String("Stelmaszuk"),
          Birth => (Day => 2, Month => 2, Year => 2002)
-      )), Next => null;
+      ), Next => null);
 
    begin
       -- Print personal data
@@ -199,6 +200,9 @@ begin
    New_Line;
    Put_Line("==========Ex 07==========");
    Ex7;
+
+   New_Line;
+   New_Line;
 
    null;
 end Main;
