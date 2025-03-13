@@ -43,6 +43,26 @@ procedure Main is
    end Transpose_Matrix;
 
 
+   -- Write transposed matrix to output.txt
+   procedure Write_Matrix is
+      File: File_Type;
+   begin
+      Create(File, Out_Type, output.txt);
+      Put(File, Columns);
+      Put(File, ' ');
+      Put(File, Rows);
+      New_Line(File);
+
+      for I in 1 .. Columns loop
+         for J in 1 .. Rows loop
+            Put(File, Transposed(I, J));
+         end loop;
+      end loop;
+
+      Close(File);
+   end Write_Matrix;
+
+
 begin
    --  Insert code here.
    null;
