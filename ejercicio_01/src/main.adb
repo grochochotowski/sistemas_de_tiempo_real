@@ -75,23 +75,27 @@ procedure Main is
       -- Print array A
       Put_Line("Array A: ");
       for I in A'Range loop
-         Put_Line(Float'Image(A(I)));
+         Put(Float'Image(A(I)) & " ");
       end loop;
 
       -- Print array B
+      New_Line;
+      New_Line;
       Put_Line("Array B: ");
       for I in 1 .. 3 loop
          for J in  1 .. 3 loop
             for K in  1 .. 3 loop
-               Put_Line(Integer'Image(B(I, J, K)));
+               Put(Integer'Image(B(I, J, K)) & " ");
             end loop;
+            New_Line;
          end loop;
+         New_Line;
       end loop;
 
       -- Print array C
       Put_Line("Array C: ");
       for I in C'Range loop
-         Put_Line(Float'Image(C(I)));
+         Put(Float'Image(C(I)) & " ");
       end loop;
 
    end Ex4;
