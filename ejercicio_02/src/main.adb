@@ -3,7 +3,7 @@ with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 
 procedure Main is
 
-   -- Function for reading letters and giving right option
+   -- ========== Function for reading letters and giving right option ==========
    procedure Read_String (String_Input : String) is
    begin
       -- Loop for checking string
@@ -24,7 +24,7 @@ procedure Main is
       end loop;
    end Read_String;
 
-   -- ============================ Static String ============================
+   -- ============================= Static String =============================
    procedure Static_String is
       -- Initialize QWERTYU
       String_Input : String := "QWERTYU";
@@ -34,15 +34,34 @@ procedure Main is
 
    end Static_String;
 
-   -- ============================ Input String ============================
+   -- ============================== Input String ==============================
+   procedure Input_String is
+      -- Create variable for input input
+      User_Input : String(1 .. 100);
+      Length: Natural;
+
+   begin
+      -- Read string
+      Put("Input:  ");
+      Get_Line(User_Input, Length);
+
+      -- Run function for displaying options
+      Read_String(User_Input(1 .. Length));
+
+   end Input_String;
 
 -- =================================== Main ===================================
 begin
    New_Line;
 
-   Put_Line("=====Excersise 1&2=====");
+   Put_Line("===========Task 1&2===========");
    Put_Line("=====Reading from QWERTYU=====");
    Static_String;
+   New_Line;
+
+   Put_Line("===========Task 3===========");
+   Put_Line("=====Reading from input=====");
+   Input_String;
    New_Line;
 
    null;
