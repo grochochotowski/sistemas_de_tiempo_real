@@ -20,6 +20,14 @@ procedure Main is
       Open(File, In_File, input.txt);
       Get(File, Rows);
       Get(File, Columns);
+
+      For I in 1 .. Rows loop
+         For J in 1 .. Columns loop
+            Get(File, Matrix(I, J));
+         end loop;
+      end loop;
+
+      Close(File)
    end Read_Matrix;
 
 
