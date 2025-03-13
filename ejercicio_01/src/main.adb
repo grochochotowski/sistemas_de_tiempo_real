@@ -127,6 +127,16 @@ procedure Main is
       Birth : Date_of_Birth;
    end record;
 
+   -- Format Day and Month
+   function Format_Day_Month (Num : Integer) return String is
+   begin
+      if Num < 10 then
+         return "0" & Integer'Image(Num)(2..2);
+      else
+         return Integer'Image(Num)(2..3);
+      end if;
+   end Format_Day_Month;
+
    -- ==============================Ex 06==============================
    procedure Ex6 is
       -- Initialize variables
@@ -140,8 +150,8 @@ procedure Main is
       -- Print personal data
       Put_Line(To_String(Person.Name) & " " &
                To_String(Person.Last_Name) & " " &
-                 Integer'Image(Person.Birth.Day)(2..2) & "-" &
-                 Integer'Image(Person.Birth.Month)(2..2) & "-" &
+                 Format_Day_Month(Person.Birth.Day) & "-" &
+                 Format_Day_Month(Person.Birth.Month) & "-" &
                  Integer'Image(Person.Birth.Year)(2..5)
               );
    end Ex6;
@@ -166,8 +176,8 @@ procedure Main is
       -- Print personal data
       Put_Line(To_String(First_Node.Data.Name) & " " &
                To_String(First_Node.Data.Last_Name) & " " &
-                 Integer'Image(First_Node.Data.Birth.Day)(2..2) & "-" &
-                 Integer'Image(First_Node.Data.Birth.Month)(2..2) & "-" &
+                 Format_Day_Month(First_Node.Data.Birth.Day) & "-" &
+                 Format_Day_Month(First_Node.Data.Birth.Month) & "-" &
                  Integer'Image(First_Node.Data.Birth.Year)(2..5)
               );
    end Ex7;
