@@ -135,10 +135,14 @@ procedure Main is
                                             Year => 2000
                                             )
                                   );
-
-
    begin
-
+      -- Print personal data
+      Put_Line(Person.Name & " " &
+               Person.Last_Name & " " &
+                 Person.Birth.Day & "." &
+                 Person.Birth.Month & "." &
+                 Person.Birth.Year
+              )
    end Ex6;
 
 
