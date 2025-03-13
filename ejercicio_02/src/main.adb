@@ -10,7 +10,7 @@ procedure Main is
       for I in Var'range loop
          if Var(I) = 'Q' or Var(I) = 'W' then
             Put_Line("Option 1");
-         else if Var(I) = 'E' or Var(R) = 'W' or Var(I) = 'T' then
+         elsif Var(I) = 'E' or Var(I) = 'R' or Var(I) = 'T' then
             Put_Line("Option 2");
          elsif Var(I) = 'Y' then
             Put_Line("Option 3");
