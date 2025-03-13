@@ -4,6 +4,7 @@ with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 
 procedure Main is
 
+   -- ==============================Ex 01==============================
    procedure Ex1 is
       -- Define data types
       subtype A_Type is Integer range -40 .. 160;
@@ -27,7 +28,7 @@ procedure Main is
       Put_Line ("B + C = " & Integer'Image(Result_3));
    end Ex1;
 
-
+   -- ==============================Ex 02==============================
    procedure Ex2 is
       -- Define data type
       type Traffic_Light is (Red, Yellow, Green);
@@ -44,7 +45,7 @@ procedure Main is
       Put_Line("Light 3: " & Traffic_Light'Image(Light_3));
    end Ex2;
 
-
+   -- ==============================Ex 03==============================
    procedure Ex3 is
       -- Define data types
       type A_Type is delta 0.001 range -30.0 .. 70.0;
@@ -62,6 +63,7 @@ procedure Main is
       Put_Line("A + B = " & B_Type'Image(Result));
    end Ex3;
 
+   -- ==============================Ex 04==============================
    procedure Ex4 is
       -- Define data types
       type A_Type is array (1 .. 24) of Float;
@@ -102,7 +104,7 @@ procedure Main is
    New_Line;
    end Ex4;
 
-
+   -- ==============================Ex 05==============================
    procedure Ex5 is
       -- Define string
       RealTime : constant String := "REALTIME";
@@ -111,7 +113,7 @@ procedure Main is
       Put_Line(RealTime);
    end Ex5;
 
-
+   -- ===========================Ex 06 & 07===========================
    -- Define data types
    type Date_of_Birth is record
       Day : Integer;
@@ -125,8 +127,8 @@ procedure Main is
       Birth : Date_of_Birth;
    end record;
 
+   -- ==============================Ex 06==============================
    procedure Ex6 is
-
       -- Initialize variables
       Person : Personal_Data := (
          Name => To_Unbounded_String("Michal"),
@@ -144,7 +146,7 @@ procedure Main is
               );
    end Ex6;
 
-
+   -- ==============================Ex 07==============================
    procedure Ex7 is
       -- Define linked list access
       type Personal_Data_Access is access Personal_Data;
@@ -170,7 +172,7 @@ procedure Main is
               );
    end Ex7;
 
-
+-- ============================= Run Procedures ==============================
 begin
    -- Run procedures
    New_Line;
