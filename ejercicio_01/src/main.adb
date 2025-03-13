@@ -125,7 +125,16 @@ procedure Main is
          Birth : Date_of_Birth;
       end record;
 
-
+      -- Initialize variables
+      Person : Personal_Dataq := (
+                                  Name => "Michal",
+                                  Last_Name => "Grochowski",
+                                  Birth => (
+                                            Day => 1,
+                                            Month => 1,
+                                            Year => 2000
+                                            )
+                                  );
 
 
    begin
