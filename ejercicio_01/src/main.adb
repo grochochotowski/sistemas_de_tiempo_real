@@ -67,7 +67,10 @@ procedure Main is
       type B_Type is array (1 .. 13, 1 .. 13, 1 .. 13) of Integer;
       type C_Type is array of Float;
 
-
+      -- Initialize variables
+      A : A_Type := (others => 0);
+      B : B_Type := (others => (others => (others => 0)));
+      C : C_Type := (1 .. 10) := (others => 0);
    begin
 
    end Ex4;
