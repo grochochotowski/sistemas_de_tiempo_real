@@ -13,6 +13,16 @@ procedure Main is
    Transposed     : Matrix_Type := (others => (others => 0));
    Rows, Columns  : Integer;
 
+   -- Read matrix from input.txt
+   procedure Read_Matrix is
+      File : File_Type;
+   begin
+      Open(File, In_File, input.txt);
+      Get(File, Rows);
+      Get(File, Columns);
+   end Read_Matrix;
+
+
 begin
    --  Insert code here.
    null;
