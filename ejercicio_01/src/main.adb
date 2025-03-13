@@ -65,12 +65,12 @@ procedure Main is
       -- Define data types
       type A_Type is array (1 .. 24) of Float;
       type B_Type is array (1 .. 13, 1 .. 13, 1 .. 13) of Integer;
-      type C_Type is array of Float;
+      type C_Type is array (Positive range <>) of Float;
 
       -- Initialize variables
-      A : A_Type := (others => 0);
+      A : A_Type := (others => 0.0);
       B : B_Type := (others => (others => (others => 0)));
-      C : C_Type := (1 .. 10) := (others => 0);
+      C : C_Type (1 .. 10) := (others => 0.0);
    begin
       -- Print array A
       Put_Line("Array A: ");
@@ -80,10 +80,10 @@ procedure Main is
 
       -- Print array B
       Put_Line("Array B: ");
-      for I in B'Range loop
-         for J in B'Range loop
-            for K in B'Range loop
-               Put_Line(Float'Image(B(I, J, K)));
+      for I in 1 .. 3 loop
+         for J in  1 .. 3 loop
+            for K in  1 .. 3 loop
+               Put_Line(Integer'Image(B(I, J, K)));
             end loop;
          end loop;
       end loop;
@@ -104,6 +104,8 @@ begin
    EX2;
    Put_Line("==========Ex 03==========");
    EX3;
+   Put_Line("==========Ex 04==========");
+   EX4;
    null;
 end Main;
 
