@@ -71,6 +71,7 @@ procedure Main is
       A : A_Type := (others => 0.0);
       B : B_Type := (others => (others => (others => 0)));
       C : C_Type (1 .. 10) := (others => 0.0);
+
    begin
       -- Print array A
       Put_Line("Array A: ");
@@ -97,19 +98,43 @@ procedure Main is
       for I in C'Range loop
          Put(Float'Image(C(I)) & " ");
       end loop;
-
+   New_Line;
    end Ex4;
+
+
+   procedure Ex5 is
+      -- Define string
+      RealTime : constant String := "REALTIME";
+
+   begin
+      -- Print string
+      Put_Line(RealTime);
+   end Ex5;
+
 
 begin
    -- Run procedures
+   New_Line;
    Put_Line("==========Ex 01==========");
    Ex1;
+
+   New_Line;
    Put_Line("==========Ex 02==========");
-   EX2;
+   Ex2;
+
+   New_Line;
    Put_Line("==========Ex 03==========");
-   EX3;
+   Ex3;
+
+   New_Line;
    Put_Line("==========Ex 04==========");
-   EX4;
+   Ex4;
+
+   New_Line;
+   Put_Line("==========Ex 05==========");
+   Ex5;
+
+   New_Line;
    null;
 end Main;
 
