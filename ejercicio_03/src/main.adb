@@ -4,7 +4,7 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 procedure Main is
 
    -- Define matrix
-   Max_Rows    : constant := 5;
+   Max_Rows    : constant := 10;
    Max_Columns : constant := 10;
 
    type Matrix_Type is array (1 .. Max_Rows, 1 .. Max_Columns) of Integer;
@@ -12,6 +12,7 @@ procedure Main is
    Matrix         : Matrix_Type := (others => (others => 0));
    Transposed     : Matrix_Type := (others => (others => 0));
    Rows, Columns  : Integer;
+
 
    -- Read matrix from input.txt
    procedure Read_Matrix is
@@ -29,6 +30,17 @@ procedure Main is
 
       Close(File)
    end Read_Matrix;
+
+
+   -- Transpose matrix
+   procedure Transpose_Matrix is
+   begin
+      For I in 1 .. Rows loop
+         For J in 1 .. Columns loop
+            Transposed(J, I) := Matrix(i, J);
+         end loop;
+      end loop;
+   end Transpose_Matrix;
 
 
 begin
