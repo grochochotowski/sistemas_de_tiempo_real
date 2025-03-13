@@ -105,11 +105,32 @@ procedure Main is
    procedure Ex5 is
       -- Define string
       RealTime : constant String := "REALTIME";
-
    begin
       -- Print string
       Put_Line(RealTime);
    end Ex5;
+
+
+   procedure Ex6 is
+      -- Define data types
+      type Date_of_Birth is record
+         Day : Integer;
+         Month : Integer;
+         Year : Integer;
+      end record;
+
+      type Personal_Data is record
+         Name : String (1 .. 20);
+         Last_Name : String (1 .. 20);
+         Birth : Date_of_Birth;
+      end record;
+
+
+
+
+   begin
+
+   end Ex6;
 
 
 begin
@@ -135,6 +156,8 @@ begin
    Ex5;
 
    New_Line;
+   Put_Line("==========Ex 06==========");
+   Ex6;
    null;
 end Main;
 
