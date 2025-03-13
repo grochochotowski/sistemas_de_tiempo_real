@@ -144,6 +144,22 @@ procedure Main is
    end Ex6;
 
 
+   procedure Ex7 is
+      -- Define linked list access
+      type Personal_Data_Access is access Personal_Data;
+
+      type Node is record
+         Data : Personal_Data;
+         Next : Personal_Data_Access;
+      end record;
+
+
+
+   begin
+
+   end Ex7;
+
+
 begin
    -- Run procedures
    New_Line;
@@ -169,6 +185,11 @@ begin
    New_Line;
    Put_Line("==========Ex 06==========");
    Ex6;
+
+   New_Line;
+   Put_Line("==========Ex 07==========");
+   Ex7;
+
    null;
 end Main;
 
