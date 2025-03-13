@@ -153,7 +153,11 @@ procedure Main is
          Next : Personal_Data_Access;
       end record;
 
-
+      First_Node : Node := (Data => (
+         Name => To_Unbounded_String("Jakub"),
+         Last_Name => To_Unbounded_String("Stelmaszuk"),
+         Birth => (Day => 2, Month => 2, Year => 2002)
+      )), Next => null;
 
    begin
 
