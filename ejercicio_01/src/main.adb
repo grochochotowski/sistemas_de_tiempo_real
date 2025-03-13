@@ -160,7 +160,13 @@ procedure Main is
       )), Next => null;
 
    begin
-
+      -- Print personal data
+      Put_Line(To_String(First_Node.Data.Name) & " " &
+               To_String(First_Node.Data.Last_Name) & " " &
+                 Integer'Image(First_Node.Data.Birth.Day)(2..2) & "-" &
+                 Integer'Image(First_Node.Data.Birth.Month)(2..2) & "-" &
+                 Integer'Image(First_Node.Data.Birth.Year)(2..5)
+              );
    end Ex7;
 
 
