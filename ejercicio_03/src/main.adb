@@ -18,7 +18,7 @@ procedure Main is
    procedure Read_Matrix is
       File : File_Type;
    begin
-      Open(File, In_File, input.txt);
+      Open(File, In_File, "src/input.txt");
       Get(File, Rows);
       Get(File, Columns);
 
@@ -28,7 +28,7 @@ procedure Main is
          end loop;
       end loop;
 
-      Close(File)
+      Close(File);
    end Read_Matrix;
 
 
@@ -47,7 +47,7 @@ procedure Main is
    procedure Write_Matrix is
       File: File_Type;
    begin
-      Create(File, Out_Type, output.txt);
+      Create(File, Out_File, "src/output.txt");
       Put(File, Columns);
       Put(File, ' ');
       Put(File, Rows);
