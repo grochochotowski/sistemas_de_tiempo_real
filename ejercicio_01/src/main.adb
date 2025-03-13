@@ -61,6 +61,17 @@ procedure Main is
       Put_Line("A + B = " & B_Type'Image(Result));
    end Ex3;
 
+   procedure Ex4 is
+      -- Define data types
+      type A_Type is array (1 .. 24) of Float;
+      type B_Type is array (1 .. 13, 1 .. 13, 1 .. 13) of Integer;
+      type C_Type is array of Float;
+
+
+   begin
+
+   end Ex4;
+
 begin
    -- Run procedures
    Put_Line("==========Ex 01==========");
