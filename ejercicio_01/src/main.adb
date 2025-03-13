@@ -1,4 +1,5 @@
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 
 
 procedure Main is
@@ -120,29 +121,26 @@ procedure Main is
       end record;
 
       type Personal_Data is record
-         Name : String (1 .. 20);
-         Last_Name : String (1 .. 20);
+         Name : Unbounded_String;
+         Last_Name : Unbounded_String;
          Birth : Date_of_Birth;
       end record;
 
       -- Initialize variables
-      Person : Personal_Dataq := (
-                                  Name => "Michal",
-                                  Last_Name => "Grochowski",
-                                  Birth => (
-                                            Day => 1,
-                                            Month => 1,
-                                            Year => 2000
-                                            )
-                                  );
+      Person : Personal_Data := (
+         Name => To_Unbounded_String("Michal"),
+         Last_Name => To_Unbounded_String("Grochowski"),
+         Birth => (Day => 1, Month => 1, Year => 2000)
+      );
+
    begin
       -- Print personal data
-      Put_Line(Person.Name & " " &
-               Person.Last_Name & " " &
-                 Person.Birth.Day & "." &
-                 Person.Birth.Month & "." &
-                 Person.Birth.Year
-              )
+      Put_Line(To_String(Person.Name) & " " &
+               To_String(Person.Last_Name) & " " &
+                 Integer'Image(Person.Birth.Day)(2..2) & "-" &
+                 Integer'Image(Person.Birth.Month)(2..2) & "-" &
+                 Integer'Image(Person.Birth.Year)(2..5)
+              );
    end Ex6;
 
 
