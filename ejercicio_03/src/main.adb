@@ -65,5 +65,8 @@ procedure Main is
 
 begin
    --  Insert code here.
+   Read_Matrix;
+   Transpose_Matrix;
+   Write_Matrix;
    null;
 end Main;
