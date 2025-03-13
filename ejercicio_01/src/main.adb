@@ -72,6 +72,27 @@ procedure Main is
       B : B_Type := (others => (others => (others => 0)));
       C : C_Type := (1 .. 10) := (others => 0);
    begin
+      -- Print array A
+      Put_Line("Array A: ");
+      for I in A'Range loop
+         Put_Line(Float'Image(A(I)));
+      end loop;
+
+      -- Print array B
+      Put_Line("Array B: ");
+      for I in B'Range loop
+         for J in B'Range loop
+            for K in B'Range loop
+               Put_Line(Float'Image(B(I, J, K)));
+            end loop;
+         end loop;
+      end loop;
+
+      -- Print array C
+      Put_Line("Array C: ");
+      for I in C'Range loop
+         Put_Line(Float'Image(C(I)));
+      end loop;
 
    end Ex4;
 
