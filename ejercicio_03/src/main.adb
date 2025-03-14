@@ -48,15 +48,13 @@ procedure Main is
       Columns : Integer := 5;
    begin
       Create(File, Out_File, "src/output.txt");
-      Put(File, Columns);
-      Put(File, ' ');
-      Put(File, Rows);
-      New_Line(File);
 
       for I in 1 .. Rows loop
          for J in 1 .. Columns loop
-            Put(File, Transposed(I, J));
+            Put(File, Transposed(I, J), Width => 0);
+            Put(File, ' ');
          end loop;
+         New_Line(File);
       end loop;
 
       Close(File);
