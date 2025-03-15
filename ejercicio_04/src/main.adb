@@ -1,4 +1,4 @@
-with Ada.Text_IO; use Ada.Text_IO
+with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Containers.Queues; use Ada.Containers.Queues;
 with Ada.Containers.Vectors; use Ada.Containers.Vectors;
 
@@ -13,7 +13,15 @@ begin
        Int_Queue.Enqueue (Q, I);
    end loop;
 
-
+   -- Dequeue and display elements
+   while not Int_Queue.Is_Empty (Q) loop
+      declare
+         Item : Integer;
+      begin
+         Int_Queue.Dequeue (Q, Item);
+         Put_Line ("Dequeued: " & Integer'Image(Item));
+      end;
+   end loop;
 
    null;
 end Main;
