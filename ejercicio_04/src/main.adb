@@ -4,10 +4,16 @@ with Ada.Containers.Vectors; use Ada.Containers.Vectors;
 
 procedure Main is
    -- Queue implementation
-   package Queue_Type is new Queue (Index_Type => Positive, Element_Type => Integer);
-   Q : Queue_Type;
+   package Int_Queue is new Queue (Index_Type => Positive, Element_Type => Integer);
+   Q : Int_Queue.Queue;
 
 begin
-   --  Insert code here.
+   -- Add elements to queue
+   for I in 1 .. 10 loop
+       Int_Queue.Enqueue (Q, I);
+   end loop;
+
+
+
    null;
 end Main;
