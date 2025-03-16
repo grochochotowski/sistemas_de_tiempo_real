@@ -2,9 +2,6 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Containers.Vectors;
 
 procedure Main is
- -- Define the queue type
-   type Data_Type is array (1 .. 10) of Integer;
-
    -- Define the Queue using Containers.Vector
    package Integer_Vector is new Ada.Containers.Vectors (Index_Type => Positive, Element_Type => Integer);
    Queue : Integer_Vector.Vector;
