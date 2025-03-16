@@ -18,9 +18,9 @@ begin
       Integer_Vector.Append(Queue, I);
    end loop;
 
-   -- Display the elements in the queue (FIFO order)
-   Put_Line("Queue elements (FIFO order):");
-   for I in 1 .. Integer_Vector.Length(Queue) loop
-      Put_Line(Integer'Image(Integer_Vector.Element(Queue, I)));
+   -- Display the elements in the queue (FIFO)
+   Put_Line("Queue elements (FIFO):");
+   for Element of Queue loop
+      Put_Line(Integer'Image(Element));
    end loop;
 end Main;
