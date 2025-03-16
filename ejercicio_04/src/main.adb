@@ -1,27 +1,26 @@
 with Ada.Text_IO; use Ada.Text_IO;
-with Ada.Containers.Queues; use Ada.Containers.Queues;
-with Ada.Containers.Vectors; use Ada.Containers.Vectors;
+with Ada.Containers.Vectors;
 
 procedure Main is
-   -- Queue implementation
-   package Int_Queue is new Queue (Index_Type => Positive, Element_Type => Integer);
-   Q : Int_Queue.Queue;
+ -- Define the queue type
+   type Data_Type is array (1 .. 10) of Integer;
+
+   -- Define the Queue using Containers.Vector
+   package Integer_Vector is new Ada.Containers.Vectors (Index_Type => Positive, Element_Type => Integer);
+   Queue : Integer_Vector.Vector;
 
 begin
-   -- Add elements to queue
+   -- Initialize the queue
+   Integer_Vector.Clear(Queue);
+
+   -- Add 10 elements to the queue (FIFO - First In, First Out)
    for I in 1 .. 10 loop
-       Int_Queue.Enqueue (Q, I);
+      Integer_Vector.Append(Queue, I);
    end loop;
 
-   -- Dequeue and display elements
-   while not Int_Queue.Is_Empty (Q) loop
-      declare
-         Item : Integer;
-      begin
-         Int_Queue.Dequeue (Q, Item);
-         Put_Line ("Dequeued: " & Integer'Image(Item));
-      end;
+   -- Display the elements in the queue (FIFO order)
+   Put_Line("Queue elements (FIFO order):");
+   for I in 1 .. Integer_Vector.Length(Queue) loop
+      Put_Line(Integer'Image(Integer_Vector.Element(Queue, I)));
    end loop;
-
-   null;
 end Main;
