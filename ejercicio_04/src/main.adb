@@ -9,18 +9,17 @@ procedure Main is
 
    procedure Queue_Implementation is
    begin
-      -- Initialize the queue
-      Integer_Vector.Clear(Queue);
-      New_Line;
+      -- Initialize a queue
+      Queue.Clear;
 
       -- Add 10 elements to the queue (FIFO - First In, First Out)
       for I in 1 .. 10 loop
          Put_Line("Appending to queue: " & Integer'Image(I));
-         Integer_Vector.Append(Queue, I);
+         Queue.Append(I);
       end loop;
       New_Line;
 
-      -- Display the elements in the queue (FIFO)
+      -- Display elements in the queue (FIFO)
       Put_Line("Queue elements (FIFO):");
       for Element of Queue loop
          Put(Integer'Image(Element) & ",");
@@ -29,9 +28,8 @@ procedure Main is
 
    procedure Stack_Implementation is
    begin
-      -- Initialize the stack
+      -- Initialize a stack
       Stack.Clear;
-      New_Line;
 
       -- Add 10 elements to the stack (LIFO - Last In, First Out)
       for I in 1 .. 10 loop
@@ -41,7 +39,7 @@ procedure Main is
       New_Line;
 
       -- Pop and display elements from the stack (LIFO)
-      Put_Line("Stack elements (FIFO):");
+      Put_Line("Stack elements (LIFO):");
       while not Stack.Is_Empty loop
          Put(Integer'Image(Stack.Last_Element) & ",");
          Stack.Delete_Last;
@@ -50,12 +48,14 @@ procedure Main is
 
 
 begin
+   New_Line;
    Put_Line("========== Queue iplementation ==========");
    Queue_Implementation;
    New_Line;
    New_Line;
    Put_Line("========== Stack iplementation ==========");
    Stack_Implementation;
+   New_Line;
    New_Line;
    New_Line;
 end Main;
