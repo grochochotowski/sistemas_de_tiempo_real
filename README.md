@@ -40,7 +40,7 @@ To run the compiled program:
 ./filename
 ```
 
-Author:
-[Michał Grochowski]
+**Author:**
+Michał Grochowski
 - Student at Białystok University of Technology
 - Erasmus+ Student at Universidad de Almería
