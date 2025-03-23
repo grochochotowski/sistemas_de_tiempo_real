@@ -1,6 +1,7 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 with All_Types; use All_Types;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
 package body Write_On_Data_Log is
    procedure Write_Log(
@@ -20,18 +21,19 @@ package body Write_On_Data_Log is
       -- Write log line to file
       Open(Log_File, Append_File, "data_log.txt");
       
-      Put(Log_File, Integer'Image(Iteration) & " ");
-      Ada.Float_Text_IO.Put(Log_File, State.ST1, Fore => 6, Aft => 2, Exp => 0);
+      Ada.Integer_Text_IO.Put(Log_File, Iteration, Width => 0);
       Put(Log_File, " ");
-      Ada.Float_Text_IO.Put(Log_File, State.ST2, Fore => 6, Aft => 2, Exp => 0);
+      Ada.Float_Text_IO.Put(Log_File, State.ST1, Fore => 0, Aft => 2, Exp => 0);
       Put(Log_File, " ");
-      Ada.Float_Text_IO.Put(Log_File, Sensor.ST3, Fore => 6, Aft => 2, Exp => 0);
+      Ada.Float_Text_IO.Put(Log_File, State.ST2, Fore => 0, Aft => 2, Exp => 0);
       Put(Log_File, " ");
-      Ada.Float_Text_IO.Put(Log_File, Sensor.ST4, Fore => 6, Aft => 2, Exp => 0);
+      Ada.Float_Text_IO.Put(Log_File, Sensor.ST3, Fore => 0, Aft => 2, Exp => 0);
       Put(Log_File, " ");
-      Ada.Float_Text_IO.Put(Log_File, Sensor.SR1, Fore => 6, Aft => 2, Exp => 0);
+      Ada.Float_Text_IO.Put(Log_File, Sensor.ST4, Fore => 0, Aft => 2, Exp => 0);
       Put(Log_File, " ");
-      Ada.Float_Text_IO.Put(Log_File, State.SD1, Fore => 6, Aft => 2, Exp => 0);
+      Ada.Float_Text_IO.Put(Log_File, Sensor.SR1, Fore => 0, Aft => 2, Exp => 0);
+      Put(Log_File, " ");
+      Ada.Float_Text_IO.Put(Log_File, State.SD1, Fore => 0, Aft => 2, Exp => 0);
       New_Line(Log_File);
       
       Close(Log_File);
