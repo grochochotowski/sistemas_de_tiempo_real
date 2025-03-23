@@ -10,12 +10,14 @@ package body Write_On_Data_Log is
       Log_File : File_Type;
       
    begin
+      -- Create data_log.txt if it doesn't exist
       if Iteration = 1 then
          Create(Log_File, Out_File, "src/data_log.txt");
          Put_Line(Log_File, "k ST1(k) ST2(k) ST3(k) ST4(k) SC1(k) SC2(k) SR1(k) SD1(k)");
          Close(Log_File);
       end if;
       
+      -- Write log line to file
       Open(Log_File, Append_File, "src/data_log.txt");
       
       Put(Log_File, Integer'Image(Iteration) & " ");
