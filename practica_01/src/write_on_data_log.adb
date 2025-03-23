@@ -10,7 +10,7 @@ package body Write_On_Data_Log is
       Log_File : File_Type;
       
    begin
-      Create(Log_File, Out_File, "data_log.txt");
+      Create(Log_File, Out_File, "src/data_log.txt");
       
       Put(Log_File, Integer'Image(Iteration) & " ");
       Ada.Float_Text_IO.Put(Log_File, State.ST1, Fore => 6, Aft => 2, Exp => 0);
