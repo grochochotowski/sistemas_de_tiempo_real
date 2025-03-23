@@ -8,14 +8,14 @@ procedure Main is
    procedure Print_Complex(Label : String; C : Complex) is
    begin
       Put(Label & " = (");
-      Put(C.Re, Fore => 0, Aft => 2);
-      Put(", ");
-      Put(C.Im, Fore => 0, Aft => 2);
-      Put_Line(")");
+      Ada.Float_Text_IO.Put(Item => C.Re, Fore => 0, Aft => 2, Exp => 0);
+      Put(" ");
+      Ada.Float_Text_IO.Put(Item => C.Im, Fore => 0, Aft => 2, Exp => 0);
+      Put_Line("i)");
    end Print_Complex;
 
    -- Define complex numbers
-   A, B, Sum, Diff, Prod, Quot, Conj : Complex;
+   A, B, Sum, Diff, Prod, Quot, ConjA, ConjB : Complex;
 
 begin
    -- Initialize complex numbers
@@ -27,16 +27,18 @@ begin
    Diff := A - B;
    Prod := A * B;
    Quot := A / B;
-   Conj := Conjugate(A);
+   ConjA := Conjugate(A);
+   ConjB := Conjugate(B);
 
-   -- Output the results.
-   Print_Complex("A:", A);
-   Print_Complex("B:", B);
+   -- Output the results
+   Print_Complex("A", A);
+   Print_Complex("B", B);
    Print_Complex("A + B", Sum);
    Print_Complex("A - B", Diff);
    Print_Complex("A * B", Prod);
    Print_Complex("A / B", Quot);
-   Print_Complex("Conjugate of A", Conj);
+   Print_Complex("Conjugate of A", ConjA);
+   Print_Complex("Conjugate of B", ConjB);
 
    null;
 end Main;
