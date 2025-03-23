@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_05\ejercicio_05.gpr
+20250323200508 66b0f0d66f3c8161c2238ec9f03b5565
+[BOUND OBJECT FILES]
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_05\obj\complex_numbers.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_05\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_05\obj\
+-LC:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_05\obj\
+-LD:/programs/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+D:/programs/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
