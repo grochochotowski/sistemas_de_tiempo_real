@@ -9,7 +9,8 @@ begin
 
    Put_Line("Data read from file:");
    for I in Data'Range loop
-      Put_Line(Float'Image(Data(I)));
+      Put_Line(Float'Image(Data(I)(1)) & " " &
+               Float'Image(Data(I)(2)) & " " &
+               Float'Image(Data(I)(3)));
    end loop;
-
 end Main1;
