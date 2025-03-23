@@ -41,5 +41,8 @@ package body Calculate_Control_Signal is
          24.0 * (0.135 + 0.003 * Prev_State.ST2 - 0.0203 * Sensor.ST3 - 0.001 * SC2
                  + 0.00004 * Prev_State.ST2 * SC2);
       
+      -- Set SC* const for logging
+      New_State.SC1 := SC1;
+      New_State.SC2 := SC2;
    end Calculate_State;
 end Calculate_Control_Signal;

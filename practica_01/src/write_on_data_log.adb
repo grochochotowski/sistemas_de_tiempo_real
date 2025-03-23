@@ -31,6 +31,10 @@ package body Write_On_Data_Log is
       Put(Log_File, " ");
       Ada.Float_Text_IO.Put(Log_File, Sensor.ST4, Fore => 0, Aft => 2, Exp => 0);
       Put(Log_File, " ");
+      Ada.Float_Text_IO.Put(Log_File, State.SC1, Fore => 0, Aft => 2, Exp => 0);
+      Put(Log_File, " ");
+      Ada.Float_Text_IO.Put(Log_File, State.SC2, Fore => 0, Aft => 2, Exp => 0);
+      Put(Log_File, " ");
       Ada.Float_Text_IO.Put(Log_File, Sensor.SR1, Fore => 0, Aft => 2, Exp => 0);
       Put(Log_File, " ");
       Ada.Float_Text_IO.Put(Log_File, State.SD1, Fore => 0, Aft => 2, Exp => 0);

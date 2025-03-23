@@ -12,6 +12,11 @@ package body Show_On_Screen is
       Put("  SD1: ");
       Ada.Float_Text_IO.Put(State.SD1, Fore => 3, Aft => 2, Exp => 0);
       New_Line;
+      Put("Const -> SC1: ");
+      Ada.Float_Text_IO.Put(State.SC1, Fore => 3, Aft => 2, Exp => 0);
+      Put("  SC2: ");
+      Ada.Float_Text_IO.Put(State.SC2, Fore => 3, Aft => 2, Exp => 0);
+      New_Line;
       Put("Sensor -> SR1: ");
       Ada.Float_Text_IO.Put(Sensor.SR1, Fore => 3, Aft => 2, Exp => 0);
       Put("  ST4: ");

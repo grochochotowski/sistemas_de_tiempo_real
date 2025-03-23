@@ -4,6 +4,8 @@ package All_Types is
       ST1 : Float;
       ST2 : Float;
       SD1 : Float;
+      SC1 : Float;
+      SC2 : Float;
    end record;
 
    type Sensor_Data is record
