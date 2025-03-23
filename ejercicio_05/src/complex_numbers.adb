@@ -23,7 +23,7 @@ package body Complex_Numbers is
    function "/" (Left, Right : Complex) return Complex is
       Denom : Float := Right.Re**2 + Right.Im**2;
    begin
-      if Deno m = 0.0 then
+      if Denom = 0.0 then
          raise Constraint_Error with "Division by zero in complex division";
       end if;
       return (Re => (Left.Re * Right.Re + Left.Im * Right.Im) / Denom,
