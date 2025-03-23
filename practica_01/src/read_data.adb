@@ -1,12 +1,12 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Float_Text_IO; use Ada.Float_Text_IO;
-with read_data;
+with Read_Data;
 
 package body Read_Data is
-    procedure Read_Text (File_Name : "src/input.txt"; Data : out Row_Table) is
+    procedure Read_Text (File_Name :  in String; Data : out Array_Data) is
       File : File_Type;
       Value : Float;
-      Index : Integer := 0;
+      Index : Integer := 1;
    begin
       Open (File, In_File, File_Name);
 
