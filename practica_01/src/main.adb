@@ -1,5 +1,5 @@
-with Simulation;
+with Simulate;
 procedure Main is
 begin
-   Simulation.Run;
+   Simulate.Run;
 end Main;
