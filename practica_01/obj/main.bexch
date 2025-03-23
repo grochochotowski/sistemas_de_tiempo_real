@@ -2,8 +2,16 @@
 b__main.o
 [PROJECT FILES]
 C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr
-20250306185624 b454a5a1f1d0021014714698eeae27d4
+20250323145006 b454a5a1f1d0021014714698eeae27d4
 [BOUND OBJECT FILES]
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\all_types.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\calculate_control_signal.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\check_security_setpoint.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\global_flags.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\read_data.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\show_on_screen.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\write_on_data_log.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\simulate.o
 C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads

@@ -23,11 +23,11 @@ package body Simulate is
       Prev_State.SD1 := 0.0;
 
       -- Create error_log file
-      Create(Alarm_File, Out_File, "src/alarm_log.txt");
+      Create(Alarm_File, Out_File, "alarm_log.txt");
       Close(Alarm_File);
 
       -- Open input file
-      Open(File_Sensor, In_File, "src/input.txt");
+      Open(File_Sensor, In_File, "input.txt");
 
       while not End_Of_File(File_Sensor) loop
          Iteration := Iteration + 1;

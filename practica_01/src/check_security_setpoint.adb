@@ -13,7 +13,7 @@ package body Check_Security_Setpoint is
          Put_Line("ALARM: ST2 exceeds 95°C at iteration " & Integer'Image(Iteration));
 
          -- Log error to error_log.txt
-         Open(Alarm_File, Append_File, "src/alarm_log.txt");
+         Open(Alarm_File, Append_File, "alarm_log.txt");
          Put_Line(Alarm_File, "ALARM: ST2 exceeds 95°C at iteration " & Integer'Image(Iteration));
          Close(Alarm_File);
       end if;
