@@ -4,6 +4,7 @@ with Complex_Numbers; use Complex_Numbers;
 
 procedure Main is
 
+   -- Procedure to print complex numbers
    procedure Print_Complex(Label : String; C : Complex) is
    begin
       Put(Label & " = (");
@@ -27,6 +28,15 @@ begin
    Prod := A * B;
    Quot := A / B;
    Conj := Conjugate(A);
+
+   -- Output the results.
+   Print_Complex("A:", A);
+   Print_Complex("B:", B);
+   Print_Complex("A + B", Sum);
+   Print_Complex("A - B", Diff);
+   Print_Complex("A * B", Prod);
+   Print_Complex("A / B", Quot);
+   Print_Complex("Conjugate of A", Conj);
 
    null;
 end Main;
