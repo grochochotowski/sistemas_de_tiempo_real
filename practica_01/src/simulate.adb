@@ -6,6 +6,7 @@ with Check_Security_Setpoint;
 with Show_On_Screen;
 with Write_On_Data_Log;
 with All_Types; use All_Types;
+with Global_Flags; use Global_Flags;
 
 package body Simulate is
    procedure Run is
@@ -24,11 +25,15 @@ package body Simulate is
       Open(File_Sensor, In_File, "src/input.txt");
 
       while not End_Of_File(File_Sensor) loop
-         exit when End_Of_File(File_Sensor);
          Iteration := Iteration + 1;
 
          -- Read row
          Read_Data.Read_Row(File_Sensor, Sensor);
+
+         -- Check if row is not empty
+         if Stop_Simulation then
+            exit;
+         end if;
 
          -- Calculate new control state
          Calculate_Control_Signal.Calculate_State(Sensor, Prev_State, New_State);
