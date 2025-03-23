@@ -13,5 +13,15 @@ procedure Main2 is
    File_Sensor : File_Type;
    Iteration   : Integer := 0;
 begin
-   
+   -- Initialize control state with initial values.
+   Prev_State.ST1 := 48.0;
+   Prev_State.ST2 := 58.0;
+   Prev_State.SD1 := 0.0;
+
+   Open(File_Sensor, In_File, "input.txt");
+
+   -- loop will be here
+
+   Close(File_Sensor);
+   Put_Line("Simulation complete.");
 end Main2;
