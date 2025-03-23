@@ -20,7 +20,35 @@ begin
 
    Open(File_Sensor, In_File, "input.txt");
 
-   -- loop will be here
+   while not End_Of_File(File_Sensor) loop
+      
+      -- Check if lines are not empty
+      if Stop_Simulation then
+         exit;
+      end if;
+      Iteration := Iteration + 1;
+
+      -- Check if it is not en of the file
+      Read_Data.Read_Row(File_Sensor, Sensor);
+      if End_Of_File(File_Sensor) then
+         exit;
+      end if;
+
+      -- Calculate optimal control state
+      Calculate_Optimal_Control.Calculate_Optimal_State(Sensor, Prev_State, New_State);
+
+      -- Check security setpoint
+      Check_Security_Setpoint.Check_Security(New_State, Iteration);
+
+      -- Display results on screen
+      Show_On_Screen.Display_State(New_State, Sensor);
+
+      -- Write log for the iteration
+      Write_On_Data_Log.Write_Log(Iteration, New_State, Sensor);
+
+      -- Update previous state
+      Prev_State := New_State;
+   end loop;
 
    Close(File_Sensor);
    Put_Line("Simulation complete.");
