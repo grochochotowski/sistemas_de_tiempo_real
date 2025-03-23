@@ -9,8 +9,13 @@ procedure Main is
    begin
       Put(Label & " = (");
       Ada.Float_Text_IO.Put(Item => C.Re, Fore => 0, Aft => 2, Exp => 0);
-      Put(" ");
-      Ada.Float_Text_IO.Put(Item => C.Im, Fore => 0, Aft => 2, Exp => 0);
+      if C.Im >= 0.0 then
+         Put(" + ");
+         Ada.Float_Text_IO.Put(Item => C.Im, Fore => 0, Aft => 2, Exp => 0);
+      else
+         Put(" - ");
+         Ada.Float_Text_IO.Put(Item => -C.Im, Fore => 0, Aft => 2, Exp => 0);
+      end if;
       Put_Line("i)");
    end Print_Complex;
 
