@@ -1,3 +1,3 @@
-package simulate is
-   procedure Simulate_Plant;
-end simulate;
+package Simulate is
+   procedure Run;
+end Simulate;
