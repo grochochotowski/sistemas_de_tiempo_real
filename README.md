@@ -10,7 +10,10 @@ The repository is organized into different exercises and practises:
 - **ejercicio_02** – basic instructions and control structures, including loops and conditional statements.
 - **ejercicio_03** – working with files and arrays, focusing on reading, processing, and writing matrix data.
 - **ejercicio_04** - implementing basic data structures (Queue and Stack) using ADA packages.
+- **ejercicio_05** - implementation of a package for complex numbers with operator overloading.
 
+- **practica_01** - simulation and control of a solar-powered membrane distillation plant. Implemented a cyclic executive to manage fixed and optimal control scenarios, data logging, safety checks, and real-time output in Ada.
+  
 ## Programming Language
 
 All exercises are implemented in **Ada**, a high-level programming language designed for real-time and embedded systems.
