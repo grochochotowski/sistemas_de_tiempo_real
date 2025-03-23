@@ -5,6 +5,7 @@ with All_Types;           use All_Types;
 
 package body Read_Data is
    procedure Read_Row(File : in out File_Type; Data : out Sensor_Data) is
+      Dummy_Index : Integer;
    begin
       Get(File, Dummy_Index);
 
