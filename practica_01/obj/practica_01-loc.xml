@@ -2,10 +2,6 @@
 <Locations >
   <Project>
     <vfs_file />
-    <file_marker column=" 15" line=" 4" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_file>
-    </file_marker>
     <file_marker column=" 1" line=" 1" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulation.adb</vfs_file>
@@ -58,7 +54,7 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 29" line=" 22" >
+    <file_marker column=" 29" line=" 23" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
@@ -66,7 +62,7 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 21" line=" 20" >
+    <file_marker column=" 21" line=" 21" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
@@ -174,7 +170,7 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\write_on_data_log.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 55" line=" 21" >
+    <file_marker column=" 51" line=" 21" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\write_on_data_log.adb</vfs_file>
     </file_marker>
@@ -250,15 +246,15 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\check_security_setpoint.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 10" line=" 42" >
+    <file_marker column=" 10" line=" 47" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 25" line=" 17" >
+    <file_marker column=" 87" line=" 13" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\check_security_setpoint.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 34" line=" 15" >
+    <file_marker column=" 87" line=" 13" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\check_security_setpoint.adb</vfs_file>
     </file_marker>
@@ -474,7 +470,7 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 21" line=" 30" >
+    <file_marker column=" 21" line=" 35" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
@@ -494,7 +490,7 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\check_security_setpoint.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 14" >
+    <file_marker column=" 87" line=" 13" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\check_security_setpoint.adb</vfs_file>
     </file_marker>
@@ -530,7 +526,7 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 21" line=" 30" >
+    <file_marker column=" 21" line=" 35" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
@@ -546,7 +542,7 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\write_on_data_log.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 46" line=" 27" >
+    <file_marker column=" 46" line=" 32" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
@@ -618,7 +614,7 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\read_data.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 29" >
+    <file_marker column=" 1" line=" 30" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\read_data.adb</vfs_file>
     </file_marker>
@@ -630,11 +626,11 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\read_data.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 46" line=" 27" >
+    <file_marker column=" 46" line=" 32" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 7" line=" 55" >
+    <file_marker column=" 7" line=" 60" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
@@ -674,7 +670,7 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 16" line=" 35" >
+    <file_marker column=" 16" line=" 40" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
     </file_marker>
@@ -686,9 +682,125 @@
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\read_data.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 6" line=" 9" >
+    <file_marker column=" 6" line=" 9" >
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 39" line=" 2" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\global_flags.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 35" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\check_security_setpoint.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 30" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 26" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 17" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 16" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\check_security_setpoint.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\write_on_data_log.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 51" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\simulate.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\show_on_screen.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\show_on_screen.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\read_data.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\read_data.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 20" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\read_data.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\global_flags.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\check_security_setpoint.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\check_security_setpoint.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 40" line=" 16" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\check_security_setpoint.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\calculate_control_signal.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\calculate_control_signal.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\all_types.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\calculate_optimal_control.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\calculate_optimal_control.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 72" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\calculate_optimal_control.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 4" line=" 3" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\src\main2.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>

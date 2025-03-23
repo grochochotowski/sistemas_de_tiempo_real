@@ -1,22 +1,21 @@
 [GENERATED OBJECT FILE]
-b__main.o
+b__main2.o
 [PROJECT FILES]
 C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\practica_01.gpr
 20250323173138 5f52333590b9ee4b3d6fb57b9c360827
 [BOUND OBJECT FILES]
 C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\all_types.o
-C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\calculate_control_signal.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\calculate_optimal_control.o
 C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\check_security_setpoint.o
 C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\global_flags.o
 C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\read_data.o
 C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\show_on_screen.o
 C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\write_on_data_log.o
-C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\simulate.o
-C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\main.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\main2.o
 [GENERATED SOURCE FILES]
-b__main.ads
-b__main.adb
-b__main.ali
+b__main2.ads
+b__main2.adb
+b__main2.ali
 [RESULTING OPTIONS]
 -LC:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\
 -LC:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_01\obj\
