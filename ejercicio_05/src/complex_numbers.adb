@@ -19,6 +19,17 @@ package body Complex_Numbers is
               Im => Left.Re * Right.Im + Left.Im * Right.Re);
    end "*";
    
+   -- Division: (a+bi)/(c+di) = [(ac+bd)/(c^2+d^2)] + [(bc-ad)/(c^2+d^2)]i
+   function "/" (Left, Right : Complex) return Complex is
+      Denom : Float := Right.Re**2 + Right.Im**2;
+   begin
+      if Deno m = 0.0 then
+         raise Constraint_Error with "Division by zero in complex division";
+      end if;
+      return (Re => (Left.Re * Right.Re + Left.Im * Right.Im) / Denom,
+              Im => (Left.Im * Right.Re - Left.Re * Right.Im) / Denom);
+   end "/";
+   
    -- Conjugate: the conjugate of (a + bi) is (a - bi)
    function Conjugate (C : Complex) return Complex is
    begin
