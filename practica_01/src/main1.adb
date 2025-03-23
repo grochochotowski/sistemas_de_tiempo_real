@@ -1,4 +1,5 @@
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 with Read_Data;
 
 procedure Main1 is
@@ -9,8 +10,11 @@ begin
 
    Put_Line("Data read from file:");
    for I in Data'Range loop
-      Put_Line(Float'Image(Data(I)(1)) & " " &
-               Float'Image(Data(I)(2)) & " " &
-               Float'Image(Data(I)(3)));
+      Ada.Float_Text_IO.Put(Data(I)(1), Fore => 6, Aft => 2, Exp => 0);
+      Put(" ");
+      Ada.Float_Text_IO.Put(Data(I)(2), Fore => 6, Aft => 2, Exp => 0);
+      Put(" ");
+      Ada.Float_Text_IO.Put(Data(I)(3), Fore => 6, Aft => 2, Exp => 0);
+      New_Line;
    end loop;
 end Main1;
