@@ -1,5 +1,6 @@
 with All_Types; use All_Types;
+with Ada.Text_IO; use Ada.Text_IO;
 
-package Read_Text_Module is
-   procedure Read_Text (File_Name:  in String; Data : out Row_Table);
-end Read_Text_Module;
+package Read_Data is
+   procedure Read_Row(File : in out File_Type; Data : out Sensor_Data);
+end Read_Data;

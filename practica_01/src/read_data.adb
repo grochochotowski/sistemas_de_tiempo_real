@@ -1,22 +1,18 @@
-with Ada.Text_IO; use Ada.Text_IO;
-with Ada.Float_Text_IO; use Ada.Float_Text_IO;
-with All_Types; use All_Types;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+with Ada.Float_Text_IO;   use Ada.Float_Text_IO;
+with Ada.Text_IO;         use Ada.Text_IO;
+with All_Types;           use All_Types;
 
-package body Read_Text_Module is
-    procedure Read_Text (File_Name :  in String; Data : out Array_Data) is
-      File : File_Type;
-      Value : Float;
-      Index : Integer := Data'First;
-
+package body Read_Data is
+   procedure Read_Row(File : in out File_Type; Data : out Sensor_Data) is
    begin
-      Open (File, In_File, File_Name);
+      Get(File, Dummy_Index);
 
-      while not End_Of_File(File) and then Index <= Data'Last loop
-         Get(File, Value);
-         Data(Index) := Value;
-         Index := Index + 1;
-      end loop;
-      Close(File);
+      Get(File, Data.SR1);
+      Get(File, Data.ST4);
+      Get(File, Data.ST3);
 
-   end Read_Text;
-end Read_Text_Module;
+      Skip_Line(File);
+
+   end Read_Row;
+end Read_Data;
