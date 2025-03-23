@@ -1,33 +1,25 @@
-with Ada.Text_IO; use Ada.Text_IO;
+with All_Types; use All_Types;
+with Ada.Float_Text_IO; use Ada.Float_Text_IO;
+
 package body Calculate_Control_Signal is
-
-   -- Define constants:
-   Beta : constant Float := 0.13;
-   Leq : constant Float := 16.0;
-   H : constant Float := 4.0;
-   c : constant Float := 9.0 * 2.0 * 6.0 * 10000.0;
-   Cp : constant Float := 4190.0;
-   Rho : constant Float := 976.0;
-
-   -- Initialize procedure
-   procedure Initialize(State : out Simulation_State) is
-   begin
-      State.ST1 := 48.0;
-      State.ST2 := 58.0;
-      State.SD1 := 0.0;
-   end Initialize;
-
-   -- Calculate State
    procedure Calculate_State(
-      SR1in Float;
-      ST4 : in Float;
-      ST3 : in Float;
-      SC1 : in Float;
-      SC2 : in Float;
-      Prev_State : in Simulation_State;
-      New_State : out Simulation_State) is
-
-      Tt     : Float;  -- Intermediate temperature
+                             Sensor : in Sensor_Data;
+                             Prev_State : in Control_State;
+                             New_State : out Control_State) is
+      
+      -- Constants:
+      Beta : constant Float := 0.13;
+      Leq : constant Float := 16.0;
+      H : constant Float := 4.0;
+      c : constant Float := 9.0 * 2.0 * 6.0 * 10000.0;
+      Cp : constant Float := 4190.0;
+      Rho : constant Float := 976.0;
+      
+      -- Fixed flow rates:
+      SC1 : constant Float := 16.0;  -- [L/min]
+      SC2 : constant Float := 425.0; -- [L/h]
+      
+      Tt : Float;
       Term1, Term2 : Float;
       
    begin
