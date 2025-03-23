@@ -3,9 +3,9 @@ with Ada.Float_Text_IO; use Ada.Float_Text_IO;
 package body Calculate_Optimal_Control is
 
    procedure Calculate_Optimal_State(
-      Sensor : in  Sensor_Data;
-      Prev_State : in  Control_State;
-      New_State : out Control_State) is
+                                     Sensor : in  Sensor_Data;
+                                     Prev_State : in  Control_State;
+                                     New_State : out Control_State) is
 
       -- Constants:
       Beta : constant Float := 0.13;
@@ -60,6 +60,10 @@ package body Calculate_Optimal_Control is
       elsif SC2_opt > 620.0 then
          SC2_opt := 620.0;
       end if;
+      
+      -- Save the computed flow rates:
+      New_State.SC1 := SC1_opt;
+      New_State.SC2 := SC2_opt;
       
       -- Equation 1
       New_State.ST2 := Prev_State.ST1 + (c / (SC1_opt * Cp * Rho)) * (Beta * Leq * Sensor.SR1 - H * (Tt - Sensor.ST4));
