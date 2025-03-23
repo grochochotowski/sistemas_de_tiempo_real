@@ -1,0 +1,17 @@
+
+ALARM: ST2 exceeds 95°C at iteration  5
+ALARM: ST2 exceeds 95°C at iteration  6
+ALARM: ST2 exceeds 95°C at iteration  7
+ALARM: ST2 exceeds 95°C at iteration  8
+ALARM: ST2 exceeds 95°C at iteration  9
+ALARM: ST2 exceeds 95°C at iteration  10
+ALARM: ST2 exceeds 95°C at iteration  11
+ALARM: ST2 exceeds 95°C at iteration  12
+ALARM: ST2 exceeds 95°C at iteration  13
+ALARM: ST2 exceeds 95°C at iteration  14
+ALARM: ST2 exceeds 95°C at iteration  15
+ALARM: ST2 exceeds 95°C at iteration  16
+ALARM: ST2 exceeds 95°C at iteration  17
+ALARM: ST2 exceeds 95°C at iteration  18
+ALARM: ST2 exceeds 95°C at iteration  19
+ALARM: ST2 exceeds 95°C at iteration  20

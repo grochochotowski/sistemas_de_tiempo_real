@@ -24,6 +24,7 @@ package body Simulate is
       Open(File_Sensor, In_File, "src/input.txt");
 
       while not End_Of_File(File_Sensor) loop
+         exit when End_Of_File(File_Sensor);
          Iteration := Iteration + 1;
 
          -- Read row
@@ -33,7 +34,7 @@ package body Simulate is
          Calculate_Control_Signal.Calculate_State(Sensor, Prev_State, New_State);
 
          -- Check security setpoint
-         Check_Security_Setpoint.Check_Security(New_State);
+         Check_Security_Setpoint.Check_Security(New_State, Iteration);
 
          -- Display on screen
          Show_On_Screen.Display_State(New_State, Sensor);
