@@ -18,5 +18,11 @@ package body Complex_Numbers is
       return (Re => Left.Re * Right.Re - Left.Im * Right.Im,
               Im => Left.Re * Right.Im + Left.Im * Right.Re);
    end "*";
+   
+   -- Conjugate: the conjugate of (a + bi) is (a - bi)
+   function Conjugate (C : Complex) return Complex is
+   begin
+      return (Re => C.Re, Im => -C.Im);
+   end Conjugate;
 
 end Complex_Numbers;
