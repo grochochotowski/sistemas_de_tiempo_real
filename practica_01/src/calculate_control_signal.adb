@@ -17,5 +17,37 @@ package body Calculate_Control_Signal is
       State.SD1 := 0.0;
    end Initialize;
 
-   
+   -- Calculate State
+   procedure Calculate_State(
+      SR1in Float;
+      ST4 : in Float;
+      ST3 : in Float;
+      SC1 : in Float;
+      SC2 : in Float;
+      Prev_State : in Simulation_State;
+      New_State : out Simulation_State) is
+
+      Tt     : Float;  -- Intermediate temperature
+      Term1, Term2 : Float;
+      
+   begin
+      -- Equation 2 (Tt)
+      Tt := (Prev_State.ST1 + Prev_State.ST2) / 2.0;
+
+      -- Equation 1 (Two quotients)
+      Term1 := (Beta * Leq * SR1 * c) / (SC1 * Cp * Rho);
+      Term2 := (H * (Tt - ST4) * c) / (SC1 * Cp * Rho);
+
+      -- Equation 1 (ST2) 
+      New_State.ST2 := Prev_State.ST1 + Term1 - Term2;
+
+      -- Equation 3 (ST1)
+      New_State.ST1 := New_State.ST2 - 10.0;
+
+      -- Equation 4 (SD1)
+      New_State.SD1 :=
+         24.0 * (0.135 + 0.003 * Prev_State.ST2 - 0.0203 * ST3 - 0.001 * SC2
+                 + 0.00004 * Prev_State.ST2 * SC2);
+      
+   end Calculate_State;
 end Calculate_Control_Signal;
