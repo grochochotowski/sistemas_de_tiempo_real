@@ -14,12 +14,17 @@ package body Simulate is
       Prev_State, New_State : Control_State;
       File_Sensor : File_Type;
       Iteration : Integer := 0;
+      Alarm_File : File_Type;
 
    begin
       -- Initialize initial values
       Prev_State.ST1 := 48.0;
       Prev_State.ST2 := 58.0;
       Prev_State.SD1 := 0.0;
+
+      -- Create error_log file
+      Create(Alarm_File, Out_File, "src/alarm_log.txt");
+      Close(Alarm_File);
 
       -- Open input file
       Open(File_Sensor, In_File, "src/input.txt");
