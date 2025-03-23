@@ -5,5 +5,12 @@ package Complex_Numbers is
       Re : Float;
       Im : Float;
    end record;
+   
+   -- Operations complex numbers.
+   function "+" (Left, Right : Complex) return Complex;
+   function "-" (Left, Right : Complex) return Complex;
+   function "*" (Left, Right : Complex) return Complex;
+   function "/" (Left, Right : Complex) return Complex;
+   function Conjugate (C : Complex) return Complex;
 
 end Complex_Numbers;
