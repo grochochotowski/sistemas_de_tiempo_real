@@ -1,3 +1,5 @@
+with Ada.Text_IO; use Ada.Text_IO;
+
 procedure sequential is
 
    procedure Task_A(I : Positive) is
