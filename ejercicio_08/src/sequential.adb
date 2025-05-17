@@ -10,6 +10,11 @@ procedure sequential is
       Put_Line("Task B: " & I'Image);
    end Task_B;
 
+   procedure Task_C(I : Positive) is
+   begin
+      Put_Line("Task C: " & I'Image);
+   end Task_C;
+
 begin
    for I in 1 .. 5 loop
       Task_A(I);
