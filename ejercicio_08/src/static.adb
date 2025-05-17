@@ -5,6 +5,13 @@ procedure static is
    task Task_B;
    task Task_C;
    
+    task body Task_A is
+   begin
+      for I in 1 .. 5 loop
+         Put_Line("Task A: " & I'Image);
+      end loop;
+   end Task_A;
+
    
 begin
    null;
