@@ -11,9 +11,9 @@ The repository is organized into different exercises and practises:
 - **ejercicio_03** – working with files and arrays, focusing on reading, processing, and writing matrix data.
 - **ejercicio_04** - implementing basic data structures (Queue and Stack) using ADA packages.
 - **ejercicio_05** - implementation of a package for complex numbers with operator overloading.
-- **ejercicio_08** – exploring Ada task concurrency by comparing sequential, static, and dynamic concurrent implementations of a manufacturing process.
-- **ejercicio_09** – implementing concurrent tasks with shared resources and mutual exclusion mechanisms using semaphores and traffic-light-like control.
-- **ejercicio_10** – creating a client-server communication model in Ada with message-passing between concurrent tasks using custom packages.
+- **ejercicio_08** – sequential vs concurrent task execution in a manufacturing process.
+- **ejercicio_09** – shared resource access with semaphores and execution ordering.
+- **ejercicio_10** – client-server task communication using message passing.
   
 ### Práctisas
 - **practica_01** - simulation and control of a solar-powered membrane distillation plant. Implemented a cyclic executive to manage fixed and optimal control scenarios, data logging, safety checks, and real-time output in Ada.
