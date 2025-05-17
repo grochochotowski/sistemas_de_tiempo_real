@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 6" line=" 7" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\mutex.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 7" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\ordered.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\no_mutext.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
+      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\mutex.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
