@@ -6,7 +6,7 @@ procedure Main is
    task body PutterClient is
    begin
       for I in 1 .. 5 loop
-         Put_Line("Task " & Name & ": " & I'Image); -- Calls PutterServer.Put_Line
+         Put_Line("Task " & Name & ": " & I'Image);
       end loop;
    end PutterClient;
 
