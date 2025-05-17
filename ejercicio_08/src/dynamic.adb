@@ -1,6 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
-procedure dynamic 
+procedure dynamic is 
    task type Task_Type(Name : Character);
 
    task body Task_Type is
