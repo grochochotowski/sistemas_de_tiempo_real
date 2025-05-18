@@ -10,7 +10,10 @@ procedure No_Mutex is
       end loop;
    end Task_Type;
 
-   A, B, C : Task_Type('A'), Task_Type('B'), Task_Type('C');
+   A : Task_Type('A');
+   B : Task_Type('B');
+   C : Task_Type('C');
+
 
 begin
    null;
