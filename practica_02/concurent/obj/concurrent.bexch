@@ -1,0 +1,29 @@
+[GENERATED OBJECT FILE]
+b__concurrent.o
+[PROJECT FILES]
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\concurent\concurrent.gpr
+20250518145318 0e91455e59c193d7e3d8187d6fde85d1
+[BOUND OBJECT FILES]
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\concurent\obj\ad_converter.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\concurent\obj\data_storage.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\concurent\obj\display.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\concurent\obj\shared.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\concurent\obj\md_control.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\concurent\obj\security_check.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\concurent\obj\solar_control.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\concurent\obj\concurrent.o
+[GENERATED SOURCE FILES]
+b__concurrent.ads
+b__concurrent.adb
+b__concurrent.ali
+[RESULTING OPTIONS]
+-LC:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\concurent\obj\
+-LC:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\concurent\obj\
+-LD:/programs/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+D:/programs/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnarl.a
+D:/programs/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads

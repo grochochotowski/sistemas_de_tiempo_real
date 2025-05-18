@@ -1,0 +1,26 @@
+[GENERATED OBJECT FILE]
+b__sequential.o
+[PROJECT FILES]
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\practica_02.gpr
+20250518134214 86ee3284e098ba270fbc5bfe799f5f7a
+[BOUND OBJECT FILES]
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\obj\md_control.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\obj\security_check.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\obj\shared.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\obj\solar_control.o
+C:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\obj\sequential.o
+[GENERATED SOURCE FILES]
+b__sequential.ads
+b__sequential.adb
+b__sequential.ali
+[RESULTING OPTIONS]
+-LC:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\obj\
+-LC:\nonSystem\IT\Code\sistemas_de_tiempo_real\practica_02\obj\
+-LD:/programs/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+D:/programs/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnarl.a
+D:/programs/gnat/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads
