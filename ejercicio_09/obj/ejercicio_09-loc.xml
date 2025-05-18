@@ -2,173 +2,41 @@
 <Locations>
   <Project>
     <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_file>
-    <file_marker column=" 6" line=" 20" >
+
+    <file_marker column="6" line="20">
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\mutex.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 6" line=" 40" >
+
+    <file_marker column="6" line="40">
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\ordered.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\no_mutext.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\mutex.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 6" line=" 40" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\ordered.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\obj\gpsauto.cgpr</vfs_file>
-    </file_marker>
-    <file_marker column=" 15" line=" 8" >
-      <vfs_project />
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\obj\gpsauto.cgpr</vfs_file>
-    </file_marker>
-    <file_marker column=" 6" line=" 40" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\ordered.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
+
+    <file_marker column="1" line="1">
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\no_mutex.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 22" line=" 13" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\no_mutex.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 6" line=" 2" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\ordered.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 3" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\ordered.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 6" line=" 2" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\ordered.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
+
+    <file_marker column="1" line="1">
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
+
+    <file_marker column="1" line="1">
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 18" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 5" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 6" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 5" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 11" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 14" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 9" line=" 5" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\semaphores.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
+
+    <file_marker column="1" line="1">
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\Putter.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
+
+    <file_marker column="1" line="1">
       <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
       <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\Putter.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\ordered.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\Putter.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\ordered.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\no_mutex.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\mutex.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\no_mutex.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\ordered.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\no_mutex.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\mutex.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\no_mutex.adb</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 1" line=" 1" >
-      <vfs_project>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\ejercicio_09.gpr</vfs_project>
-      <vfs_file>C:\nonSystem\IT\Code\sistemas_de_tiempo_real\ejercicio_09\src\mutex.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>
+
