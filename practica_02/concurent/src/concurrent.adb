@@ -1,6 +1,8 @@
-procedure Concurrent is
+with Solar_Control;
+with MD_Control;
+with Security_Check;
 
+procedure Concurrent is
 begin
-   --  Insert code here.
    null;
 end Concurrent;
