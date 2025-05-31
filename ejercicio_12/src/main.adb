@@ -72,6 +72,19 @@ procedure Main is
       Run_Task("T2", Milliseconds(15), T2_Work'Access);
    end T2;
 
+   -- Task T3
+   procedure T3_Work is
+   begin
+      Put_Line("T3: c1");
+      delay Milliseconds(2);
+   end T3_Work;
+
+   task T3;
+   pragma Priority(2);
+   task body T3 is
+   begin
+      Run_Task("T3", Milliseconds(20), T3_Work'Access);
+   end T3;
 
 begin
 
