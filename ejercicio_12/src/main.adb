@@ -1,3 +1,6 @@
+with Ada.Text_IO, Ada.Real_Time, System;
+use Ada.Text_IO, Ada.Real_Time, System;
+
 procedure Main is
 
    -- Shared Resource X
