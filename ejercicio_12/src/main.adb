@@ -12,6 +12,18 @@ procedure Main is
       end Use;
    end Resource_X;
 
+   -- Shared Resource Y
+   protected Resource_Y is
+      procedure Use(Time_In_Use : Time_Span);
+   end Resource_Y;
+
+   protected body Resource_Y is
+      procedure Use(Time_In_Use : Time_Span) is
+      begin
+         delay Time_In_Use;
+      end Use;
+   end Resource_Y;
+
 begin
 
    null;
