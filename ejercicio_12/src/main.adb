@@ -54,6 +54,25 @@ procedure Main is
       Run_Task("T1", Milliseconds(15), T1_Work'Access);
    end T1;
 
+   -- Task T2
+   procedure T2_Work is
+   begin
+      Put_Line("T2: b1");
+      delay Milliseconds(1);
+      Put_Line("T2: by");
+      Resource_Y.Use(Milliseconds(2));
+      Put_Line("T2: b2");
+      delay Milliseconds(1);
+   end T2_Work;
+
+   task T2;
+   pragma Priority(3);
+   task body T2 is
+   begin
+      Run_Task("T2", Milliseconds(15), T2_Work'Access);
+   end T2;
+
+
 begin
 
    null;
