@@ -86,7 +86,24 @@ procedure Main is
       Run_Task("T3", Milliseconds(20), T3_Work'Access);
    end T3;
 
-begin
+   -- Task T4
+   procedure T4_Work is
+   begin
+      Put_Line("T4: d1");
+      delay Milliseconds(1);
+      Put_Line("T4: dx");
+      Resource_X.Use(Milliseconds(4));
+      Put_Line("T4: d2");
+      delay Milliseconds(1);
+   end T4_Work;
 
+   task T4;
+   pragma Priority(1);
+   task body T4 is
+   begin
+      Run_Task("T4", Milliseconds(40), T4_Work'Access);
+   end T4;
+
+begin
    null;
 end Main;
