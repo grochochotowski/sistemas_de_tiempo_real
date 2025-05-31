@@ -36,6 +36,24 @@ procedure Main is
       end loop;
    end Run_Task;
 
+   -- Task T1
+   procedure T1_Work is
+   begin
+      Put_Line("T1: a1");
+      delay Milliseconds(2);
+      Put_Line("T1: ax");
+      Resource_X.Use(Milliseconds(1));
+      Put_Line("T1: ay");
+      Resource_Y.Use(Milliseconds(1));
+      Put_Line("T1: a2");
+      delay Milliseconds(1);
+   end T1_Work;
+
+   task body T1 is
+   begin
+      Run_Task("T1", Milliseconds(15), T1_Work'Access);
+   end T1;
+
 begin
 
    null;
