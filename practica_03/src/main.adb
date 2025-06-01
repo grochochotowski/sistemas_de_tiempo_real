@@ -1,0 +1,147 @@
+with Ada.Text_IO;
+with Ada.Real_Time;
+with System;
+
+use Ada.Text_IO;
+use Ada.Real_Time;
+use System;
+
+procedure Main is
+
+Period_Safety  : constant Time_Span := Milliseconds(25);
+Period_Solar   : constant Time_Span := Milliseconds(50);
+Period_MD      : constant Time_Span := Milliseconds(100);
+
+-------------- Shared resources
+protected Data_Storage is
+   procedure Store(Data : String);
+end Data_Storage;
+
+protected body Data_Storage is
+   procedure Store(Data : String) is
+   begin
+      Put_Line("Storing data: " & Data);
+   end Store;
+end Data_Storage;
+
+
+task type Display_Task is
+   entry Show(Message : String);
+end Display_Task;
+
+task body Display_Task is
+begin
+   loop
+      select
+         accept Show(Message : String) do
+            delay 0.010; -- display time
+            Put_Line("DISPLAY: " & Message);
+         end Show;
+      or
+         delay 0.015; -- timeout protection
+         Put_Line("DISPLAY: Timeout occurred.");
+      end select;
+   end loop;
+end Display_Task;
+
+Display : Display_Task;
+
+
+task type AD_Card_Server is
+   entry Read(Sensor : out Integer);
+   entry Write(ControlSignal : Integer);
+end AD_Card_Server;
+
+task body AD_Card_Server is
+   Internal_Value : Integer := 0;
+begin
+   loop
+      select
+         accept Read(Sensor : out Integer) do
+            Sensor := Internal_Value;
+            Put_Line("A/D Read: " & Integer'Image(Sensor));
+         end Read;
+      or
+         accept Write(ControlSignal : Integer) do
+            Internal_Value := ControlSignal;
+            Put_Line("A/D Write: " & Integer'Image(ControlSignal));
+         end Write;
+      end select;
+   end loop;
+end AD_Card_Server;
+
+ADC : AD_Card_Server;
+
+
+-------------- Control tasks
+task type Safety_Control_Type is
+   pragma Priority(3);
+end Safety_Control_Type;
+
+Safety_Control : Safety_Control_Type;
+
+task body Safety_Control_Type is
+   Next_Time : Time := Clock;
+   Sensor : Integer;
+begin
+   loop
+      ADC.Read(Sensor);  -- simulate A/D read
+      Put_Line("Safety Control logic...");
+      ADC.Write(1); -- simulate control signal
+      Display.Show("Safety Control Update");
+      Data_Storage.Store("Safety log");
+      Next_Time := Next_Time + Period_Safety;
+      delay until Next_Time;
+   end loop;
+end Safety_Control_Type;
+
+
+task type Solar_Field_Control_Type is
+   pragma Priority(2);
+end Solar_Field_Control_Type;
+
+Solar_Field_Control : Solar_Field_Control_Type;
+
+task body Solar_Field_Control_Type is
+   Next_Time : Time := Clock;
+   Sensor : Integer;
+begin
+   loop
+      ADC.Read(Sensor);
+      Put_Line("Solar Field Control logic...");
+      ADC.Write(2);
+      Display.Show("Solar Field Update");
+      Data_Storage.Store("Solar data");
+      Next_Time := Next_Time + Period_Solar;
+      delay until Next_Time;
+   end loop;
+end Solar_Field_Control_Type;
+
+
+task type MD_Module_Control_Type is
+      pragma Priority(1);
+end MD_Module_Control_Type;
+
+MD_Module_Control : MD_Module_Control_Type;
+
+task body MD_Module_Control_Type is
+   Next_Time : Time := Clock;
+   Sensor : Integer;
+begin
+   loop
+      ADC.Read(Sensor);
+      Put_Line("MD Module Control logic...");
+      ADC.Write(3);
+      Display.Show("MD Module Update");
+      Data_Storage.Store("MD log");
+      Next_Time := Next_Time + Period_MD;
+      delay until Next_Time;
+   end loop;
+end MD_Module_Control_Type;
+
+
+-------------- Main
+
+begin
+   null;
+end Main;
