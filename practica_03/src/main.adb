@@ -110,6 +110,26 @@ begin
 end Solar_Field_Control;
 
 
+task MD_Module_Control;
+pragma Priority(1);
+
+task body MD_Module_Control is
+   Next_Time : Time := Clock;
+   Sensor : Integer;
+begin
+   loop
+      ADC.Read(Sensor);
+      Put_Line("MD Module Control logic...");
+      ADC.Write(3);
+      Display.Show("MD Module Update");
+      Data_Storage.Store("MD log");
+      Next_Time := Next_Time + Period_MD;
+      delay until Next_Time;
+   end loop;
+end MD_Module_Control;
+
+
+-------------- Main
 procedure Main is
 begin
    null;
