@@ -72,6 +72,24 @@ ADC : AD_Card_Server;
 
 
 -------------- Control tasks
+task Safety_Control;
+pragma Priority(3);
+
+task body Safety_Control is
+   Next_Time : Time := Clock;
+   Sensor : Integer;
+begin
+   loop
+      ADC.Read(Sensor);  -- simulate A/D read
+      Put_Line("Safety Control logic...");
+      ADC.Write(1); -- simulate control signal
+      Display.Show("Safety Control Update");
+      Data_Storage.Store("Safety log");
+      Next_Time := Next_Time + Period_Safety;
+      delay until Next_Time;
+   end loop;
+end Safety_Control;
+
 
 
 procedure Main is
