@@ -23,6 +23,30 @@ protected body Data_Storage is
 end Data_Storage;
 
 
+task type Display_Task is
+   entry Show(Message : String);
+end Display_Task;
+
+task body Display_Task is
+begin
+   loop
+      select
+         accept Show(Message : String) do
+            delay Milliseconds(10); -- display time
+            Put_Line("DISPLAY: " & Message);
+         end Show;
+      or
+         delay Milliseconds(15); -- timeout protection
+         Put_Line("DISPLAY: Timeout occurred.");
+      end select;
+   end loop;
+end Display_Task;
+
+Display : Display_Task;
+
+
+
+
 procedure Main is
 
 begin
