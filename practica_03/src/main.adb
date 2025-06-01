@@ -45,11 +45,36 @@ end Display_Task;
 Display : Display_Task;
 
 
+task type AD_Card_Server is
+   entry Read(Sensor : out Integer);
+   entry Write(ControlSignal : Integer);
+end AD_Card_Server;
+
+task body AD_Card_Server is
+   Internal_Value : Integer := 0;
+begin
+   loop
+      select
+         accept Read(Sensor : out Integer) do
+            Sensor := Internal_Value;
+            Put_Line("A/D Read: " & Integer'Image(Sensor));
+         end Read;
+      or
+         accept Write(ControlSignal : Integer) do
+            Internal_Value := ControlSignal;
+            Put_Line("A/D Write: " & Integer'Image(ControlSignal));
+         end Write;
+      end select;
+   end loop;
+end AD_Card_Server;
+
+ADC : AD_Card_Server;
+
+
+-------------- Control tasks
 
 
 procedure Main is
-
 begin
-   --  Insert code here.
    null;
 end Main;
