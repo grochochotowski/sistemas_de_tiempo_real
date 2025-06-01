@@ -6,6 +6,8 @@ use Ada.Text_IO;
 use Ada.Real_Time;
 use System;
 
+procedure Main is
+
 Period_Safety  : constant Time_Span := Milliseconds(25);
 Period_Solar   : constant Time_Span := Milliseconds(50);
 Period_MD      : constant Time_Span := Milliseconds(100);
@@ -32,11 +34,11 @@ begin
    loop
       select
          accept Show(Message : String) do
-            delay Milliseconds(10); -- display time
+            delay 0.010; -- display time
             Put_Line("DISPLAY: " & Message);
          end Show;
       or
-         delay Milliseconds(15); -- timeout protection
+         delay 0.015; -- timeout protection
          Put_Line("DISPLAY: Timeout occurred.");
       end select;
    end loop;
@@ -72,10 +74,13 @@ ADC : AD_Card_Server;
 
 
 -------------- Control tasks
-task Safety_Control;
-pragma Priority(3);
+task type Safety_Control_Type is
+   pragma Priority(3);
+end Safety_Control_Type;
 
-task body Safety_Control is
+Safety_Control : Safety_Control_Type;
+
+task body Safety_Control_Type is
    Next_Time : Time := Clock;
    Sensor : Integer;
 begin
@@ -88,13 +93,16 @@ begin
       Next_Time := Next_Time + Period_Safety;
       delay until Next_Time;
    end loop;
-end Safety_Control;
+end Safety_Control_Type;
 
 
-task Solar_Field_Control;
-pragma Priority(2);
+task type Solar_Field_Control_Type is
+   pragma Priority(2);
+end Solar_Field_Control_Type;
 
-task body Solar_Field_Control is
+Solar_Field_Control : Solar_Field_Control_Type;
+
+task body Solar_Field_Control_Type is
    Next_Time : Time := Clock;
    Sensor : Integer;
 begin
@@ -107,13 +115,16 @@ begin
       Next_Time := Next_Time + Period_Solar;
       delay until Next_Time;
    end loop;
-end Solar_Field_Control;
+end Solar_Field_Control_Type;
 
 
-task MD_Module_Control;
-pragma Priority(1);
+task type MD_Module_Control_Type is
+      pragma Priority(1);
+end MD_Module_Control_Type;
 
-task body MD_Module_Control is
+MD_Module_Control : MD_Module_Control_Type;
+
+task body MD_Module_Control_Type is
    Next_Time : Time := Clock;
    Sensor : Integer;
 begin
@@ -126,11 +137,11 @@ begin
       Next_Time := Next_Time + Period_MD;
       delay until Next_Time;
    end loop;
-end MD_Module_Control;
+end MD_Module_Control_Type;
 
 
 -------------- Main
-procedure Main is
+
 begin
    null;
 end Main;
