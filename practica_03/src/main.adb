@@ -91,6 +91,24 @@ begin
 end Safety_Control;
 
 
+task Solar_Field_Control;
+pragma Priority(2);
+
+task body Solar_Field_Control is
+   Next_Time : Time := Clock;
+   Sensor : Integer;
+begin
+   loop
+      ADC.Read(Sensor);
+      Put_Line("Solar Field Control logic...");
+      ADC.Write(2);
+      Display.Show("Solar Field Update");
+      Data_Storage.Store("Solar data");
+      Next_Time := Next_Time + Period_Solar;
+      delay until Next_Time;
+   end loop;
+end Solar_Field_Control;
+
 
 procedure Main is
 begin
