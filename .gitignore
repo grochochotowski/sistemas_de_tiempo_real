@@ -1,5 +1,14 @@
-# Object file
-*.o
+# macOS and editor files
+.DS_Store
+.#*
 
-# Ada Library Information
+# GNAT Studio and Ada build output
+**/obj/
+*.o
 *.ali
+*.exe
+*.bexch
+*.stdout
+*.stderr
+*.cgpr
+*-loc.xml
