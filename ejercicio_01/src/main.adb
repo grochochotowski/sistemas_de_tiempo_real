@@ -167,8 +167,8 @@ procedure Main is
       end record;
 
       First_Node : Node := (Data => (
-         Name => To_Unbounded_String("Jakub"),
-         Last_Name => To_Unbounded_String("Stelmaszuk"),
+         Name => To_Unbounded_String("Sample"),
+         Last_Name => To_Unbounded_String("Person"),
          Birth => (Day => 2, Month => 2, Year => 2002)
       ), Next => null);
 
@@ -218,4 +218,3 @@ begin
 
    null;
 end Main;
-
