@@ -4,19 +4,20 @@ This repository contains exercises and projects for the **Sistemas de Tiempo Rea
 
 ## Contents
 
-The repository is organized into different exercises and practises:
+The repository is organized into exercises and practical assignments:
+
 ### Ejercicios
 - **Ejercicio_01** – exploring various data types through simple exercises.
 - **Ejercicio_02** – basic instructions and control structures, including loops and conditional statements.
 - **Ejercicio_03** – working with files and arrays, focusing on reading, processing, and writing matrix data.
-- **Ejercicio_04** - implementing basic data structures (Queue and Stack) using ADA packages.
+- **Ejercicio_04** - implementing basic data structures (Queue and Stack) using Ada packages.
 - **Ejercicio_05** - implementation of a package for complex numbers with operator overloading.
 - **Ejercicio_08** – sequential vs concurrent task execution in a manufacturing process.
 - **Ejercicio_09** – shared resource access with semaphores and execution ordering.
 - **Ejercicio_10** – client-server task communication using message passing.
 - **Ejercicio_12** - calculating response times of concurrent tasks with shared resources using priority inheritance.
   
-### Práctisas
+### Prácticas
 - **Practica_01** - simulation and control of a solar-powered membrane distillation plant. Implemented a cyclic executive to manage fixed and optimal control scenarios, data logging, safety checks, and real-time output in Ada.
 - **Practica_02** – modeling and implementing a real-time solar desalination control system using temporal Petri nets and Ada, first via a cyclic executive and then with concurrent tasks, incorporating shared resources, timing constraints, and safety checks.
 - **Practica_03** - planning and implementing a real-time task control system in Ada using both cyclic executive and concurrent tasks, including priority assignment, utilization analysis, and response time calculation with priority inheritance.
@@ -46,7 +47,8 @@ To run the compiled program:
 ./filename
 ```
 
-**Author:**
+## Author
+
 Michał Grochowski
 - Student at Białystok University of Technology
 - Erasmus+ Student at Universidad de Almería
